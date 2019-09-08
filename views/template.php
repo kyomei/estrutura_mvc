@@ -21,7 +21,7 @@
     </nav>
 
     <main role="main">
-
+      
       <?php $this->view($viewName, $viewData); ?>
 
     </main>
