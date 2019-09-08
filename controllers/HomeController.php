@@ -3,7 +3,8 @@ class HomeController extends Controller
 {
 	public function index()
 	{
-		$this->view('home2');
+		$data['nome'] = 'Rafael';
+		$this->view('home', $data);
 	}
 
 	public function teste($id)

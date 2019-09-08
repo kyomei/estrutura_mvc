@@ -1,1 +1,2 @@
-<h1>Olá, página inicial do MVC</h1>
+<h1>Olá, <?php echo $nome; ?></h1>
+<p>Página inicial do MVC</p>
