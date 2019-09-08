@@ -1,13 +1,13 @@
 <?php
-class HomeController
+class HomeController extends Controller
 {
 	public function index()
 	{
-		echo "Welcome!";
+		$this->view('home2');
 	}
 
-	public function teste()
+	public function teste($id)
 	{
-		echo "Este é um teste";
+		echo "Este é um teste ".$id;
 	}
 }
