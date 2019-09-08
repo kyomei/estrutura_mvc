@@ -4,7 +4,7 @@ class HomeController extends Controller
 	public function index()
 	{
 		$data['nome'] = 'Rafael';
-		$this->view('home', $data);
+		$this->template('home', $data);
 	}
 
 	public function teste($id)

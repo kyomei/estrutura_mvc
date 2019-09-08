@@ -10,4 +10,9 @@ class Controller
 			require 'views/errors/error_404.php';
 		}
 	}
+
+	protected function template($viewName, $viewData = array())
+	{
+		require 'views/template.php';
+	}
 }
