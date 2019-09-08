@@ -3,7 +3,11 @@ class HomeController extends Controller
 {
 	public function index()
 	{
-		$data['nome'] = 'Rafael';
+
+		$usuarios = new Usuarios();
+
+		$data['quantidade'] = $usuarios->getQuantidade();
+		$data['usuarios'] = $usuarios->getUsuarios();
 		$this->template('home', $data);
 	}
 
